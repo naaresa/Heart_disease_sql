@@ -21,45 +21,44 @@ The SQL queries in this repository aim to:
 4. Highlight patterns in chest pain types and their association with heart disease.
 
 ## Key Queries and Insights
-Below is a summary of the key SQL queries and their purposes, grouped by analysis focus. Repetitive or redundant queries (e.g., similar cholesterol range analyses) are consolidated to avoid duplication.
+Below is a summary of the key SQL queries and their purposes, grouped by analysis focus.
 
-### 1. Prevalence of Heart Disease by Sex
+### 1. Data Quality Check
+- **Query**: Checks for missing or invalid cholesterol values (e.g., 0.0 or NULL).
+- **Insight**: Ensures data integrity by identifying potential anomalies in cholesterol measurements.
+
+### 2. Prevalence of Heart Disease by Sex
 - **Query**: Calculates the total number of patients, heart disease cases, and percentage of heart disease by sex.
 - **Insight**: Helps understand how heart disease prevalence differs between males and females.
 
-### 2. Average Age Analysis
+### 3. Average Age Analysis
 - **Query**: Computes the overall average age of patients and compares the average age of patients with and without heart disease.
 - **Insight**: Reveals whether heart disease is associated with older or younger age groups.
 
-### 3. Patient Demographics
+### 4. Patient Demographics
 - **Query**: Counts the number of male and female patients.
 - **Insight**: Provides a baseline understanding of the dataset's demographic distribution.
 
-### 4. Chest Pain Type Analysis
+### 5-6. Chest Pain Type Analysis
 - **Queries**:
-  - Identifies the most common chest pain types and their frequencies.
   - Analyzes the relationship between chest pain types and heart disease diagnosis.
   - Filters patients with specific chest pain types (e.g., Typical Angina, Atypical Angina, or Non-Anginal Pain).
 - **Insight**: Highlights which chest pain types are most prevalent and their association with heart disease.
 
-### 5. Clinical Attributes and Heart Disease
+### 7-9. Clinical Attributes and Heart Disease
 - **Queries**:
   - Identifies patients with high blood pressure (≥140 mmHg), high cholesterol (≥300 mg/dl), and high fasting blood sugar (1.0).
   - Examines patients with cholesterol levels in specific ranges (e.g., 100–200 mg/dl) and their heart disease status.
   - Finds patients with high fasting blood sugar and specific chest pain types (Asymptomatic or Non-Anginal Pain).
 - **Insight**: Pinpoints high-risk patient groups based on clinical thresholds and their heart disease outcomes.
 
-### 6. Age Extremes and Heart Disease
+### 10-11. Age Extremes and Heart Disease
 - **Queries**:
   - Determines the minimum and maximum age of patients with heart disease.
   - Lists the youngest patients diagnosed with heart disease.
 - **Insight**: Identifies the age range of heart disease patients, focusing on younger patients who may be at risk.
 
-### 7. Data Quality Check
-- **Query**: Checks for missing or invalid cholesterol values (e.g., 0.0 or NULL).
-- **Insight**: Ensures data integrity by identifying potential anomalies in cholesterol measurements.
-
-### 8. Specific Cohort Analysis
+### 12-13. Specific Cohort Analysis
 - **Queries**:
   - Identifies female patients with high cholesterol (≥300 mg/dl) and chest pain types containing "Angina."
   - Finds patients with normal blood pressure (<140 mmHg) and non-anginal chest pain.

@@ -62,7 +62,7 @@ SELECT id, age, sex, chest_pain_type, fasting_blood_sugar, heart_disease_diagnos
 FROM tout2.data_heartdisease
 WHERE fasting_blood_sugar = 1.0
   AND chest_pain_type IN ('Asymptomatic', 'Non-Anginal Pain')
-ORDER BY age LIMIT 6;
+ORDER BY age;
 
 
 --10. What is the minimum and maximum age of patients with heart disease?
